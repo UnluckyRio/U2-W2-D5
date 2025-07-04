@@ -32,7 +32,7 @@
     />
   </head>
   <!-- Body -->
-  <body class="bg-dark">
+  <body class="bg-light">
     <!-- HEADER: Navbar stile Netflix -->
     <header>
       <!-- Navbar con logo, link e icone -->
@@ -78,8 +78,162 @@
       </nav>
     </header>
     <!-- Fine HEADER -->
-    <!-- Main -->
-    <main></main>
+    <!-- Corpo principale della pagina Account stile Netflix -->
+    <main class="container my-5 bg-light">
+      <!-- Titolo Account -->
+      <h2 class="fw-normal mb-4 text-start text-black-50">Account</h2>
+      <!-- Sezione Membership & Billing -->
+      <div class="row border-top border-bottom py-4 align-items-center">
+        <div class="col-md-4 text-secondary fw-semibold">
+          MEMBERSHIP & BILLING
+          <!-- Spostato qui il bottone per cancellare l'abbonamento -->
+          <button
+            class="btn btn-outline-secondary mb-2 w-75 mt-3 text-black btn-cancel-membership"
+          >
+            Cancel Membership
+          </button>
+        </div>
+        <div class="col-md-4">
+          <div class="fw-bold">student@strive.school</div>
+          <div class="text-secondary">Password: ********</div>
+          <div class="text-secondary">Phone: 321 044 1279</div>
+          <div class="mt-2">
+            <!-- Icona PayPal -->
+            <img
+              src="https://www.paypalobjects.com/webstatic/icon/pp258.png"
+              alt="PayPal"
+              height="20"
+            />
+            <span class="fw-bold"> PayPal: admin@strive.school</span>
+          </div>
+        </div>
+        <div class="col-md-4 text-end">
+          <!-- Bottone per cancellare l'abbonamento rimosso da qui -->
+          <!-- Link di gestione account -->
+          <div>
+            <a href="#" class="d-block link-primary text-decoration-none"
+              >Change account email</a
+            >
+          </div>
+          <div>
+            <a href="#" class="d-block link-primary text-decoration-none"
+              >Change password</a
+            >
+          </div>
+          <div>
+            <a href="#" class="d-block link-primary text-decoration-none"
+              >Change phone number</a
+            >
+          </div>
+          <div>
+            <a href="#" class="d-block link-primary text-decoration-none"
+              >Update payment info</a
+            >
+          </div>
+          <div>
+            <a href="#" class="d-block link-primary text-decoration-none"
+              >Billing details</a
+            >
+          </div>
+          <div>
+            <a href="#" class="d-block link-primary text-decoration-none"
+              >Redeem gift card or promo code</a
+            >
+          </div>
+          <div>
+            <a href="#" class="d-block link-primary text-decoration-none"
+              >Where to buy gift cards</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Sezione Plan Details -->
+      <div class="row border-bottom py-3 align-items-center">
+        <div class="col-md-4 text-secondary fw-semibold">PLAN DETAILS</div>
+        <div class="col-md-4">
+          <span class="fw-bold">Premium</span>
+          <span class="badge bg-light text-dark border border-dark ms-2"
+            >ULTRA HD</span
+          >
+        </div>
+        <div class="col-md-4 text-end">
+          <a href="#" class="link-primary text-decoration-none">Change plan</a>
+        </div>
+      </div>
+      <!-- Sezione Settings -->
+      <div class="row border-bottom py-3">
+        <div class="col-md-4 text-secondary fw-semibold">SETTINGS</div>
+        <div class="col-md-8">
+          <a href="#" class="d-block link-primary text-decoration-none"
+            >Parental controls</a
+          >
+          <a href="#" class="d-block link-primary text-decoration-none"
+            >Test participation</a
+          >
+          <a href="#" class="d-block link-primary text-decoration-none"
+            >Manage download devices</a
+          >
+          <a href="#" class="d-block link-primary text-decoration-none"
+            >Activate a device</a
+          >
+          <a href="#" class="d-block link-primary text-decoration-none"
+            >Recent device streaming activity</a
+          >
+          <a href="#" class="d-block link-primary text-decoration-none"
+            >Sign out of all devices</a
+          >
+        </div>
+      </div>
+      <!-- Sezione My Profile -->
+      <div class="row py-3">
+        <div class="col-md-4 text-secondary fw-semibold">MY PROFILE</div>
+        <div class="col-md-4 d-flex align-items-center">
+          <!-- Avatar profilo -->
+          <img
+            src="../assets/img/avatar.png"
+            alt="Avatar"
+            height="32"
+            class="me-2 rounded"
+          />
+          <span class="fw-bold">Strive Student</span>
+        </div>
+        <div class="col-md-4 text-end">
+          <a href="#" class="d-block link-primary text-decoration-none"
+            >Manage profiles</a
+          >
+          <a href="#" class="d-block link-primary text-decoration-none"
+            >Add profile email</a
+          >
+        </div>
+        <div class="col-md-8 offset-md-4">
+          <div class="row">
+            <!-- Prima colonna: contiene i primi tre link -->
+            <div class="col-6">
+              <a href="#" class="d-block link-primary mb-2 text-decoration-none"
+                >Language</a
+              >
+              <a href="#" class="d-block link-primary mb-2 text-decoration-none"
+                >Playback settings</a
+              >
+              <a href="#" class="d-block link-primary mb-2 text-decoration-none"
+                >Subtitle appearance</a
+              >
+            </div>
+            <!-- Seconda colonna: contiene gli altri due link -->
+            <div class="col-6">
+              <a href="#" class="d-block link-primary mb-2 text-decoration-none"
+                >Viewing activity</a
+              >
+              <a href="#" class="d-block link-primary mb-2 text-decoration-none"
+                >Ratings</a
+              >
+            </div>
+          </div>
+          <!-- Commento: questa struttura usa la griglia Bootstrap per disporre i link in due colonne verticali -->
+        </div>
+      </div>
+    </main>
+    <!-- Fine corpo principale -->
     <!-- Footer -->
     <footer></footer>
     <!-- Link Bootstrap.js -->

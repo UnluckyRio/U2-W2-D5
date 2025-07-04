@@ -14,9 +14,23 @@
   /* Commento: transizione fluida per trasformazione e ombra */
 }
 .card.bg-dark:hover {
-  transform: scale(1.08) translateY(-12px);
+  transform: scale(1.03) translatey(-3px);
   /* Commento: ingrandisce leggermente la card e la solleva verso l'alto */
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
   z-index: 2;
   /* Commento: aggiunge ombra marcata */
+}
+
+/* Stile personalizzato per il bottone Cancel Membership: quadrato, grigio chiaro, testo centrato */
+.btn-cancel-membership {
+  height: 40px; /* altezza quadrata */
+  background-color: #f0f0f0 !important; /* grigio chiaro */
+  color: #000 !important; /* testo nero */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px !important;
+  border: 1px solid #ccc !important;
+  font-size: 1rem;
+  padding: 0 !important;
 }

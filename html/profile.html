@@ -7,10 +7,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Title -->
-    <title></title>
+    <title>NETFLIX CLONE - PROFILE</title>
     <!-- Link Bootstrap.css -->
-    <link href="../assets/css/custom-bootstrap.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../assets/scss/style.css" />
     <!-- Icon -->
+    <link
+      rel="icon"
+      href="../assets/img/vecteezy_netflix-mobile-application-logo_17396814.png"
+      <!--
+      Fonts
+      --
+    />
     <!-- Fonts -->
     <link
       rel="stylesheet"
@@ -18,11 +32,129 @@
     />
   </head>
   <!-- Body -->
-  <body>
+  <body class="bg-dark">
     <!-- Header -->
     <header></header>
     <!-- Main -->
-    <main></main>
+    <main>
+      <!-- Container centrale per la pagina di modifica profilo -->
+      <div
+        class="container d-flex flex-column align-items-center justify-content-center"
+        style="min-height: 90vh"
+      >
+        <!-- Logo Netflix in alto a sinistra -->
+        <div class="w-100 mb-4">
+          <!-- Cliccando sul logo si torna alla home -->
+          <a href="home.html">
+            <img
+              src="../assets/img/netflix_logo.png"
+              alt="Netflix"
+              height="90"
+            />
+          </a>
+        </div>
+        <!-- Card centrale per il form -->
+        <div
+          class="bg-dark text-white p-5 rounded"
+          style="min-width: 400px; max-width: 500px; width: 100%"
+        >
+          <!-- Titolo -->
+          <h1 class="mb-4" style="font-size: 3rem">Edit Profile</h1>
+          <hr class="border-secondary" />
+          <div class="d-flex align-items-start mb-4">
+            <!-- Avatar -->
+            <div class="me-4 position-relative">
+              <img
+                src="../assets/img/avatar.png"
+                alt="Avatar"
+                class="rounded"
+                style="width: 100px; height: 100px; background: #00ff90"
+              />
+              <!-- Icona matita per modifica avatar -->
+              <span
+                class="position-absolute bottom-0 end-0 bg-dark rounded-circle p-1"
+                style="border: 2px solid #fff"
+              >
+                <i class="bi bi-pencil-fill" style="color: #fff"></i>
+              </span>
+            </div>
+            <!-- Input nome profilo -->
+            <input
+              type="text"
+              class="form-control bg-secondary text-white border-0"
+              value="Strive Student"
+            />
+          </div>
+          <!-- Selezione lingua -->
+          <div class="mb-4">
+            <label class="form-label">Language:</label>
+            <select
+              class="form-select bg-dark text-white w-auto d-inline-block"
+            >
+              <option selected>English</option>
+              <option>Italiano</option>
+              <option>Español</option>
+              <option>Français</option>
+            </select>
+          </div>
+          <hr class="border-secondary" />
+          <!-- Maturity Settings -->
+          <div class="mb-4">
+            <label class="form-label mb-1">Maturity Settings:</label>
+            <div>
+              <button class="btn btn-secondary btn-sm mb-2" disabled>
+                ALL MATURITY RATINGS
+              </button>
+            </div>
+            <div class="mb-2" style="font-size: 0.95rem">
+              Show titles of <b>all maturity ratings</b> for this profile.
+            </div>
+            <button class="btn btn-outline-secondary btn-sm" disabled>
+              EDIT
+            </button>
+          </div>
+          <hr class="border-secondary" />
+          <!-- Autoplay controls -->
+          <div class="mb-4">
+            <label class="form-label mb-2">Autoplay controls</label>
+            <div class="form-check mb-1">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                checked
+                disabled
+                id="autoplay1"
+              />
+              <label class="form-check-label" for="autoplay1">
+                Autoplay next episode in a series on all devices.
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                checked
+                disabled
+                id="autoplay2"
+              />
+              <label class="form-check-label" for="autoplay2">
+                Autoplay previews while browsing on all devices.
+              </label>
+            </div>
+          </div>
+          <hr class="border-secondary" />
+          <!-- Pulsanti finali -->
+          <div class="d-flex justify-content-start gap-2">
+            <button class="btn btn-light fw-bold px-4">SAVE</button>
+            <button class="btn btn-outline-secondary px-4">CANCEL</button>
+            <button class="btn btn-outline-secondary px-4" disabled>
+              DELETE PROFILE
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Commento: questa struttura ricrea fedelmente la pagina di modifica profilo di Netflix usando Bootstrap -->
+    </main>
     <!-- Footer -->
     <footer></footer>
     <!-- Link Bootstrap.js -->

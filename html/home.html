@@ -7,10 +7,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Title -->
-    <title></title>
+    <title>NETFLIX CLONE - HOME</title>
     <!-- Link Bootstrap.css -->
-    <link href="../assets/css/custom-bootstrap.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../assets/scss/style.css" />
     <!-- Icon -->
+    <link
+      rel="icon"
+      href="../assets/img/vecteezy_netflix-mobile-application-logo_17396814.png"
+      <!--
+      Fonts
+      --
+    />
     <!-- Fonts -->
     <link
       rel="stylesheet"
@@ -18,13 +32,324 @@
     />
   </head>
   <!-- Body -->
-  <body>
-    <!-- Header -->
-    <header></header>
-    <!-- Main -->
-    <main></main>
-    <!-- Footer -->
-    <footer></footer>
+  <body class="bg-dark">
+    <!-- HEADER: Navbar stile Netflix -->
+    <header>
+      <!-- Navbar con logo, link e icone -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <!-- Logo Netflix -->
+          <a class="navbar-brand" href="#">
+            <img
+              src="../assets/img/netflix_logo.png"
+              alt="Netflix"
+              height="30"
+            />
+          </a>
+          <!-- Link di navigazione -->
+          <div class="collapse navbar-collapse show">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./profile.html">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./settings.html">Settings</a>
+              </li>
+            </ul>
+            <!-- Icone a destra -->
+            <div class="d-flex align-items-center">
+              <i class="bi bi-search text-white me-3"></i>
+              <span class="text-white me-3">KIDS</span>
+              <i class="bi bi-bell text-white me-3"></i>
+              <img
+                src="../assets/img/avatar.png"
+                alt="Avatar"
+                height="30"
+                class="rounded"
+              />
+              <!-- Freccia in basso accanto all'avatar utente -->
+              <i class="bi bi-caret-down-fill text-white ms-1"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Fine HEADER -->
+    <!-- MAIN: Sezioni con caroselli -->
+    <main class="bg-dark" style="min-height: 80vh">
+      <div class="container-fluid mt-4">
+        <!-- Sezione TV Shows, Genres e bottoni visualizzazione in alto a destra -->
+        <div class="d-flex justify-content-between align-items-start mb-4">
+          <div class="d-flex align-items-center">
+            <!-- Titolo TV Shows -->
+            <h1 class="text-white me-4 mb-0" style="font-size: 2rem">
+              TV Shows
+            </h1>
+            <!-- Dropdown Generi -->
+            <div>
+              <select
+                class="form-select bg-dark text-center text-white border-secondary"
+                style="width: 150px"
+              >
+                <option selected>Genres</option>
+                <option value="1">Comedies</option>
+                <option value="2">Dramas</option>
+                <option value="3">Action</option>
+                <option value="4">Documentaries</option>
+                <option value="5">Kids</option>
+              </select>
+            </div>
+          </div>
+          <!-- Bottoni visualizzazione griglia/lista allineati a destra -->
+          <div>
+            <button
+              class="btn btn-outline-secondary btn-sm me-1"
+              title="Vista griglia"
+            >
+              <i class="bi bi-grid-fill"></i>
+            </button>
+            <button
+              class="btn btn-outline-secondary btn-sm"
+              title="Vista lista"
+            >
+              <i class="bi bi-list"></i>
+            </button>
+          </div>
+        </div>
+        <!-- Fine sezione TV Shows, Genres e bottoni visualizzazione -->
+        <h2 class="text-white mb-3">Trending Now</h2>
+        <!-- Carosello orizzontale di card -->
+        <div class="row flex-nowrap overflow-auto">
+          <!-- Card esempio -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+            <div class="card bg-dark border-0">
+              <img
+                src="../assets/img/media1.jpg"
+                class="card-img-top"
+                alt="Stranger Things"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+            <div class="card bg-dark border-0">
+              <img
+                src="../assets/img/media2.webp"
+                class="card-img-top"
+                alt="How I Met Your Mother"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+            <div class="card bg-dark border-0">
+              <img
+                src="../assets/img/media3.webp"
+                class="card-img-top"
+                alt="My Next Guest"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+            <div class="card bg-dark border-0">
+              <img
+                src="../assets/img/media4.jpg"
+                class="card-img-top"
+                alt="Brooklyn Nine-Nine"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+            <div class="card bg-dark border-0">
+              <img
+                src="../assets/img/media5.webp"
+                class="card-img-top"
+                alt="The Last Czars"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+            <div class="card bg-dark border-0">
+              <img
+                src="../assets/img/media6.jpg"
+                class="card-img-top"
+                alt="Fresh Prince"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Fine sezione Trending Now -->
+        <!-- Sezione Watch It Again -->
+        <h2 class="text-white mb-3 mt-5">Watch It Again</h2>
+        <div class="row flex-nowrap overflow-auto">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+            <div class="card bg-dark border-0">
+              <img
+                src="../assets/img/media7.webp"
+                class="card-img-top"
+                alt="Black Mirror"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+            <div class="card bg-dark border-0">
+              <img
+                src="../assets/img/media8.webp"
+                class="card-img-top"
+                alt="Comedians of the World"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+            <div class="card bg-dark border-0">
+              <img
+                src="../assets/img/media9.jpg"
+                class="card-img-top"
+                alt="Unbreakable Kimmy Schmidt"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+            <div class="card bg-dark border-0">
+              <img
+                src="../assets/img/media10.jpg"
+                class="card-img-top"
+                alt="Dave Chappelle"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+            <div class="card bg-dark border-0">
+              <img
+                src="../assets/img/media11.jpg"
+                class="card-img-top"
+                alt="Dave Chappelle 2"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+            <div class="card bg-dark border-0">
+              <img
+                src="../assets/img/media12.jpg"
+                class="card-img-top"
+                alt="The IT Crowd"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Fine sezione Watch It Again -->
+        <!-- Sezione New Releases -->
+        <h2 class="text-white mb-3 mt-5">New Releases</h2>
+        <div class="row flex-nowrap overflow-auto">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+            <div class="card bg-dark border-0">
+              <img
+                src="../assets/img/media13.jpg"
+                class="card-img-top"
+                alt="The Chef Show"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+            <div class="card bg-dark border-0">
+              <img
+                src="../assets/img/media14.webp"
+                class="card-img-top"
+                alt="Dead to Me"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+            <div class="card bg-dark border-0">
+              <img
+                src="../assets/img/media15.jpg"
+                class="card-img-top"
+                alt="Mr. Iglesias"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+            <div class="card bg-dark border-0">
+              <img
+                src="../assets/img/media16.webp"
+                class="card-img-top"
+                alt="Tales of the City"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+            <div class="card bg-dark border-0">
+              <img
+                src="../assets/img/media17.jpg"
+                class="card-img-top"
+                alt="Barbary"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+            <div class="card bg-dark border-0">
+              <img
+                src="../assets/img/media18.jpg"
+                class="card-img-top"
+                alt="The Standups"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Fine sezione New Releases -->
+      </div>
+    </main>
+    <!-- Fine MAIN -->
+    <!-- FOOTER: Footer stile Netflix -->
+    <footer class="bg-dark text-secondary mt-5 pt-4 pb-2">
+      <div class="container">
+        <div class="row">
+          <!-- Colonna link social -->
+          <div class="col-12 mb-3">
+            <a href="#"><i class="bi bi-facebook me-3 text-secondary"></i></a>
+            <a href="#"><i class="bi bi-instagram me-3 text-secondary"></i></a>
+            <a href="#"><i class="bi bi-twitter me-3 text-secondary"></i></a>
+            <a href="#"><i class="bi bi-youtube text-secondary"></i></a>
+          </div>
+          <!-- Colonne link -->
+          <div class="col-6 col-md-3">
+            <ul class="list-unstyled">
+              <li>Audio and Subtitles</li>
+              <li>Media Center</li>
+              <li>Privacy</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3">
+            <ul class="list-unstyled">
+              <li>Audio Description</li>
+              <li>Investor Relations</li>
+              <li>Legal Notices</li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3">
+            <ul class="list-unstyled">
+              <li>Help Center</li>
+              <li>Jobs</li>
+              <li>Cookie Preferences</li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3">
+            <ul class="list-unstyled">
+              <li>Gift Cards</li>
+              <li>Terms of Use</li>
+              <li>Corporate Information</li>
+            </ul>
+          </div>
+        </div>
+        <button class="btn btn-outline-secondary btn-sm mt-3">
+          Service Code
+        </button>
+        <p class="mt-2 small">&copy; 2019 Netflix, Inc.</p>
+      </div>
+    </footer>
+    <!-- Fine FOOTER -->
     <!-- Link Bootstrap.js -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
